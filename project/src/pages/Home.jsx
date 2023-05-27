@@ -2,10 +2,13 @@ import React from "react";
 import '../styles_desktop/App.css';
 import Search from "../assets/search.svg";
 import Schoolgirl from "../assets/schoolgirl.png";
+import Schoolgirl2 from "../assets/schoolgirl2.png";
 import Document from "../assets/document.svg";
 import Teacher from "../assets/teacher.svg";
 import Gradcap from "../assets/gradcap.svg";
 import Course from "../components/Courses";
+import Design from "../assets/designbook.png";
+import Star from "../assets/star.svg";
 
 export default function Home(){
     return (
@@ -79,7 +82,7 @@ export default function Home(){
                     <span style={{color:"#1154FDff"}}>Explore </span> 
                     Our Courses
                 </h2>
-                <p>
+                <p className="section-2-p">
                     You will take your career to the next level with 
                     KhadijatAcademy by getting world class resources.
                 </p>
@@ -102,6 +105,47 @@ export default function Home(){
                     </div>
                 </div>
                 <button className="explore-button">Explore All Courses</button>
+            </section>
+
+            <section className="section-3">
+                <div className="section-3-left">
+                    <h2 className="section-1-h2" style={{color:"#1154FDff"}}>Here are some books designed for you</h2>
+                    <p className="section-3-p">
+                        You will take your career to the next level with 
+                        KhadijatAcademy by getting world class resources.
+                    </p>
+                    <button className="download-button">Download</button>
+                </div>
+                <div className="section-3-right">
+                    <img src={Design} alt="Design Book" />
+                </div>
+            </section>
+
+            <section className="section-4">
+                <h2 className="section-4-h2">What Our <span style={{color:"#1154FDff"}}>Students</span> Say</h2>
+                <p className="section-4-p">Here are what our online students have to say about KhadijatAcademy.</p>
+                <div className="section-4-sub">
+                    <div className="section-4-sub-left">
+                        <p>
+                            "Thank you so much for you help. It's exactly what I've been looking for.
+                            You won't regret it. It really saves me time and effort. KhadijatAcademy is
+                            exactly what our business has been lacking."
+                        </p>
+                        <div className="testimonial">
+                            <b>Jessica Luo</b>
+                            <div>
+                                <img src={Star} alt="Star Icon" />
+                                <img src={Star} alt="Star Icon" />
+                                <img src={Star} alt="Star Icon" />
+                                <img src={Star} alt="Star Icon" />
+                                <img src={Star} alt="Star Icon" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="section-4-sub-right">
+                        <img src={Schoolgirl2} alt="School Girl" />
+                    </div>
+                </div>
             </section>
         </>
     )

@@ -2,7 +2,7 @@ import React from "react";
 import Book from "../assets/book1.jpeg"
 import '../styles_desktop/App.css';
 import Tutor from "../assets/tutor.png";
-import Star from "../assets/star.svg"
+import Star from "../assets/star.svg";
 
 
 export default function Course(){
