@@ -17,3 +17,151 @@ body {
 * {
   box-sizing: border-box;
 }
+
+nav {
+  background-color: #0A349Aff;
+  padding: 0.5em 5em;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-left > img {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-left > p {
+  font-family: 'Parisienne', cursive;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.nav-right > a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.button-1 {
+  width: auto;
+  color: white;
+  background-color: transparent;
+  padding: 0.5em 1.5em;
+  outline: none;
+  border: 1.4px solid white;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+.button-2 {
+  width: auto;
+  color: white;
+  background-color: #1154FDff;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  padding: 1em 2em 0em 5em;
+  background-color: #0A349Aff;
+  width: 100%;
+  height: auto;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  padding-top: 2em;
+  padding-bottom: 6em;
+  gap: 1em;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 66.999%;
+  position: relative;
+}
+
+.hero-right > img {
+  width: 70%;
+  margin-left: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-h1 {
+  font-size: 2.8rem;
+  color: white;
+  width: 95%;
+  margin: 0;
+}
+
+.hero-p1 {
+  font-size: 0.875rem;
+  color: whitesmoke;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1.5em;
+  background-color: #759BFCff;
+  border-radius: 35px;
+  color: white;
+}
+
+.search-container > img {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.search-container > input {
+  outline: none;
+  border: none;
+  width: 100%;
+  background: transparent;
+  color: white;
+  padding: 1.25em 0em;
+}
+
+.search-container > input::placeholder {
+  color: white;
+}
+
+#search-button {
+  background-color: #1154FDff;
+  width: 250px;
+  height: 100%;
+  border-radius: 35px;
+  padding: 0;
+
+}
+
