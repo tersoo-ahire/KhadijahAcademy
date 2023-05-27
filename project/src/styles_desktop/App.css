@@ -111,9 +111,6 @@ nav {
 .hero-right > img {
   width: 70%;
   margin-left: auto;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .hero-h1 {
