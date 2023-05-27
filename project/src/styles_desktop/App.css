@@ -194,8 +194,9 @@ nav {
   padding: 3em 2em 2em 2em;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 0px 22px 5px rgba(211,218,227,0.76);
+  -webkit-box-shadow: 0px 0px 22px 5px rgba(211,218,227,0.76);
+  -moz-box-shadow: 0px 0px 22px 5px rgba(211,218,227,0.76);
   text-align: center;
   border-radius: 20px;
   position: relative;
@@ -440,6 +441,9 @@ nav {
   padding: 0.5em;
   border-left: 8px solid #FF3D6Eff;
   border-radius: 5px;
+  box-shadow: 0px 0px 22px 5px rgba(211,218,227,0.76);
+  -webkit-box-shadow: 0px 0px 22px 5px rgba(211,218,227,0.76);
+  -moz-box-shadow: 0px 0px 22px 5px rgba(211,218,227,0.76);
 }
 
 .section-4-sub-right {
@@ -457,4 +461,86 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 5em 1em 5em;
+  background-color: #001854ff;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+footer > h3 {
+  color: #CED6EBff;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.email {
+  padding: 1em 1.5em;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid grey;
+  color: white;
+  width: 300px;
+  background-color: transparent;
+}
+
+.subscribe {
+  padding: 1em 1.5em;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  color: white;
+  width: 175px;
+  background-color: #3970FEff;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.logo-container > img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-container > p {
+  font-family: 'Parisienne', cursive;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.description {
+  color: rgb(159, 159, 159);
+  padding: 1em 0.5em;
+  border-left: 1px solid white;
+  margin-left: 1em;
+  font-size: 0.875rem;
+}
+
+.links {
+  display: flex;
+  margin-top: 2em;
+}
+
+.links a {
+  color: #CED6EBff;
+  text-decoration: none;
+  padding: 0em 2em;
+}
+
+.copywrite {
+  color: #CED6EBff;
 }
