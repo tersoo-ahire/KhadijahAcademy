@@ -3,9 +3,6 @@ import '../styles_desktop/App.css';
 import Search from "../assets/search.svg";
 import Schoolgirl from "../assets/schoolgirl.png";
 import Schoolgirl2 from "../assets/schoolgirl2.png";
-import Document from "../assets/document.svg";
-import Teacher from "../assets/teacher.svg";
-import Gradcap from "../assets/gradcap.svg";
 import Courses from "../components/Courses";
 import Design from "../assets/designbook.png";
 import Star from "../assets/star.svg";
@@ -84,7 +81,7 @@ export default function Home(){
             </section>
 
             <section className="section-2">
-                <h2 className="section-1-h2" >
+                <h2 className="section-2-h2" >
                     <span style={{color:"#1154FDff"}}>Explore </span> 
                     Our Courses
                 </h2>
@@ -105,8 +102,8 @@ export default function Home(){
                     <div className="courses-container-sub">
                         {Course2}
                     </div>
+                    <button className="explore-button">Explore All Courses</button>
                 </div>
-                <button className="explore-button">Explore All Courses</button>
             </section>
 
             <section className="section-3">
