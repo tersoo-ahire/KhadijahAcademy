@@ -200,7 +200,6 @@ nav {
   text-align: center;
   border-radius: 20px;
   position: relative;
-  overflow: visible;
 }
 
 .features-card-h3 {
@@ -219,8 +218,6 @@ nav {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
   background-color: #F8872B;
   position: absolute;
   top: 0;
@@ -253,6 +250,10 @@ nav {
 
 .circle-container1 > img {
   width: 30px;
+  margin: 0 auto;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
 .circle-container2 > img {
@@ -324,7 +325,14 @@ nav {
 .details {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#details-p {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
 }
 
 .tutor-container {
@@ -444,6 +452,11 @@ nav {
   box-shadow: 0px 0px 22px 5px rgba(211,218,227,0.76);
   -webkit-box-shadow: 0px 0px 22px 5px rgba(211,218,227,0.76);
   -moz-box-shadow: 0px 0px 22px 5px rgba(211,218,227,0.76);
+}
+
+.message {
+  font-size: 0.875rem;
+  color: grey;
 }
 
 .section-4-sub-right {

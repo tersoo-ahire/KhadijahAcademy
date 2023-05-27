@@ -6,11 +6,17 @@ import Schoolgirl2 from "../assets/schoolgirl2.png";
 import Document from "../assets/document.svg";
 import Teacher from "../assets/teacher.svg";
 import Gradcap from "../assets/gradcap.svg";
-import Course from "../components/Courses";
+import Courses from "../components/Courses";
 import Design from "../assets/designbook.png";
 import Star from "../assets/star.svg";
+import coursedata from "../data/course";
+import coursedata2 from "../data/course2";
+
 
 export default function Home(){
+    const Course = coursedata.map(item => {return (<Courses key = {item.id} {...item}/>)})
+    const Course2 = coursedata2.map(item => {return (<Courses key = {item.id} {...item}/>)})
+
     return (
         <>
             <section className="hero">
@@ -42,9 +48,9 @@ export default function Home(){
                 </p>
                 <div className="section-1-card-container">
                     <div className="features-card">
-                        <div className="circle-container1">
+                        {/* <div className="circle-container1">
                             <img src={Document} alt="Document Icon" />
-                        </div>
+                        </div> */}
                         <h3 className="features-card-h3">Unlimited Access to courses</h3>
                         <p className="features-card-p">
                             With over 48 hours of lessons available in 24/7,
@@ -53,9 +59,9 @@ export default function Home(){
                         </p>
                     </div>
                     <div className="features-card">
-                        <div className="circle-container2">
+                        {/* <div className="circle-container2">
                             <img src={Teacher} alt="Teacher Icon" />
-                        </div>
+                        </div> */}
                         <h3 className="features-card-h3">Taught by top instructors</h3>
                         <p className="features-card-p">
                             With over 48 hours of lessons available in 24/7,
@@ -64,9 +70,9 @@ export default function Home(){
                         </p>
                     </div>
                     <div className="features-card">
-                        <div className="circle-container3">
+                        {/* <div className="circle-container3">
                             <img src={Gradcap} alt="Gradcap Icon" />
-                        </div>
+                        </div> */}
                         <h3 className="features-card-h3">Learning at your pace</h3>
                         <p className="features-card-p">
                             With over 48 hours of lessons available in 24/7,
@@ -94,14 +100,10 @@ export default function Home(){
                 </div>
                 <div className="courses-container">
                     <div className="courses-container-sub">
-                        <Course/>
-                        <Course/>
-                        <Course/>
+                        {Course}
                     </div>
                     <div className="courses-container-sub">
-                        <Course/>
-                        <Course/>
-                        <Course/>
+                        {Course2}
                     </div>
                 </div>
                 <button className="explore-button">Explore All Courses</button>
@@ -126,7 +128,7 @@ export default function Home(){
                 <p className="section-4-p">Here are what our online students have to say about KhadijatAcademy.</p>
                 <div className="section-4-sub">
                     <div className="section-4-sub-left">
-                        <p>
+                        <p className="message">
                             "Thank you so much for you help. It's exactly what I've been looking for.
                             You won't regret it. It really saves me time and effort. KhadijatAcademy is
                             exactly what our business has been lacking."

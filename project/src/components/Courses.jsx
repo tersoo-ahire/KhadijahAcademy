@@ -1,16 +1,15 @@
 import React from "react";
-import Book from "../assets/book1.jpeg"
 import '../styles_desktop/App.css';
 import Tutor from "../assets/tutor.png";
 import Star from "../assets/star.svg";
 
 
-export default function Course(){
+export default function Course(props){
     return (
         <div className="course">
-            <img src={Book} alt="Book Image" />
+            <img src={props.image} alt="Book Image" />
             <div className="details">
-                <p>Hands on Javascript</p>
+                <p id="details-p">Hands on Advanced Javascript</p>
                 <p style={{color:"#FF3D6Eff",fontWeight:"bold"}}>N9,900</p>
             </div>
             <div className="tutor-container">
