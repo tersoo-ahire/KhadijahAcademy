@@ -88,8 +88,9 @@ nav {
 .hero {
   display: flex;
   flex-direction: row;
-  padding: 1em 2em 0em 5em;
-  background-color: #0A349Aff;
+  padding: 0em 2em 2em 5em;
+  background-color: #0A349A;
+  background: url("../assets/hero_image.png") border-box no-repeat center;
   width: 100%;
   height: auto;
 }
@@ -98,22 +99,24 @@ nav {
   display: flex;
   flex-direction: column;
   width: 33%;
-  padding-top: 2em;
-  padding-bottom: 6em;
+  justify-content: center;
+  padding-top: 0em;
+  padding-bottom: 7em;
   gap: 1em;
 }
 
 .hero-right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   width: 66.999%;
-  position: relative;
 }
 
 .hero-right > img {
   width: 70%;
+  margin-top: auto;
   margin-left: auto;
+  transform:rotate(-1.5deg);
 }
 
 .hero-h1 {
@@ -625,7 +628,8 @@ footer > h3 {
 
   .hero {
       display: flex;
-      padding: 7em 1em 2em 1em;
+      padding: 5em 1em 2em 1em;
+      background: #0A349A;
       flex-direction: column-reverse;
   }
 
@@ -640,6 +644,7 @@ footer > h3 {
 
   .hero-right > img {
     width: 80%;
+    transform:rotate(0deg);
   }
 
   .hero-h1 {
@@ -870,6 +875,7 @@ footer > h3 {
   .hero {
     display: flex;
     padding: 7em 1.5em 2em 1.5em;
+    background: #0A349A;
     flex-direction: column-reverse;
   }
 
@@ -887,6 +893,7 @@ footer > h3 {
   .hero-right > img {
     width: 60%;
     margin: 0 auto;
+    transform:rotate(0deg);
   }
 
   .hero-h1 {
@@ -1121,7 +1128,9 @@ footer > h3 {
   }
 
   .hero {
+    height: auto;
     padding: 6em 2em 0em 2em;
+    height: 600px;
   }
 
   .hero-left {
