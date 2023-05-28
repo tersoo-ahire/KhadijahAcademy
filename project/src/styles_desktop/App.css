@@ -88,7 +88,7 @@ nav {
 .hero {
   display: flex;
   flex-direction: row;
-  padding: 0em 2em 2em 5em;
+  padding: 0em 2em 0em 5em;
   background-color: #0A349A;
   background: url("../assets/hero_image.png") border-box no-repeat center;
   width: 100%;
@@ -113,10 +113,10 @@ nav {
 }
 
 .hero-right > img {
-  width: 70%;
-  margin-top: auto;
+  width: 500px;
+  /* min-width: 60%; */
   margin-left: auto;
-  transform:rotate(-1.5deg);
+  /* transform:rotate(-1.5deg); */
 }
 
 .hero-h1 {
@@ -127,7 +127,7 @@ nav {
 }
 
 .hero-p1 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: whitesmoke;
 }
 
@@ -193,8 +193,9 @@ nav {
   display: flex;
   flex-direction: column;
   width: auto;
-  height: 300px;
-  padding: 3em 2em 2em 2em;
+  height: auto;
+  padding: 2.5em 1em 2em 1em;
+  gap: 1em;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 0px 22px 5px rgba(211,218,227,0.76);
@@ -214,7 +215,7 @@ nav {
 .features-card-p {
   font-weight: 400;
   color: rgb(69, 69, 69);
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .circle-container1 {
@@ -1129,13 +1130,13 @@ footer > h3 {
 
   .hero {
     height: auto;
-    padding: 6em 2em 0em 2em;
+    padding: 0em 2em 0em 2em;
     height: 600px;
   }
 
   .hero-left {
     width: 50%;
-    padding-bottom: 4em;
+    padding-bottom: 0em;
     padding-top: 2em;
   }
 

@@ -6,6 +6,9 @@ import Schoolgirl2 from "../assets/schoolgirl2.png";
 import Courses from "../components/Courses";
 import Design from "../assets/designbook.png";
 import Star from "../assets/star.svg";
+import document from "../assets/document.svg";
+import teacher from "../assets/teacher.svg";
+import gradcap from "../assets/gradcap.svg";
 import coursedata from "../data/course";
 import coursedata2 from "../data/course2";
 
@@ -45,10 +48,8 @@ export default function Home(){
                 </p>
                 <div className="section-1-card-container">
                     <div className="features-card">
-                        {/* <div className="circle-container1">
-                            <img src={Document} alt="Document Icon" />
-                        </div> */}
-                        <h3 className="features-card-h3">Unlimited Access to courses</h3>
+                        <img src={document} alt="Document Icon" />
+                        <h3 className="features-card-h3">Unlimited access to courses</h3>
                         <p className="features-card-p">
                             With over 48 hours of lessons available in 24/7,
                             you will learn anything you need to know to upskill
@@ -56,9 +57,7 @@ export default function Home(){
                         </p>
                     </div>
                     <div className="features-card">
-                        {/* <div className="circle-container2">
-                            <img src={Teacher} alt="Teacher Icon" />
-                        </div> */}
+                        <img src={teacher} alt="Teacher Icon" />
                         <h3 className="features-card-h3">Taught by top instructors</h3>
                         <p className="features-card-p">
                             With over 48 hours of lessons available in 24/7,
@@ -67,9 +66,7 @@ export default function Home(){
                         </p>
                     </div>
                     <div className="features-card">
-                        {/* <div className="circle-container3">
-                            <img src={Gradcap} alt="Gradcap Icon" />
-                        </div> */}
+                        <img src={gradcap} alt="Gradcap Icon" />
                         <h3 className="features-card-h3">Learning at your pace</h3>
                         <p className="features-card-p">
                             With over 48 hours of lessons available in 24/7,
