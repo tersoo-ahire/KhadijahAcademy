@@ -26,6 +26,10 @@ nav {
   height: auto;
 }
 
+.hamburger {
+  display: none;
+}
+
 .nav-left {
   display: flex;
   flex-direction: row;
@@ -504,6 +508,12 @@ footer > h3 {
   gap: 0.5em;
 }
 
+.logo-name {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
 .email {
   padding: 1em 1.5em;
   border-radius: 30px;
@@ -531,15 +541,19 @@ footer > h3 {
   gap: 0.5em;
 }
 
-.logo-container > img {
+.logo-name > img {
   width: 30px;
   height: 30px;
 }
 
-.logo-container > p {
+.logo-name > p {
   font-family: 'Parisienne', cursive;
   color: white;
   font-size: 1.25rem;
+}
+
+.link-border {
+  border-right: 1px solid grey;
 }
 
 .description {
@@ -563,4 +577,248 @@ footer > h3 {
 
 .copywrite {
   color: #CED6EBff;
+}
+
+@media (max-width: 500px) {
+  nav {
+      padding: 0.5em 2em;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      align-items: center;
+  }
+  
+  .nav-right {
+    display: none;
+  }
+
+  .nav-right.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0A349Aff;
+    padding: 1em;
+  }
+
+  .nav-right.open a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 0.5em;
+  }
+
+  .nav-open .hamburger {
+    position: fixed;
+    top: 0.5em;
+    right: 0.5em;
+    z-index: 1;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .hero {
+      display: flex;
+      padding: 7em 1em 2em 1em;
+      flex-direction: column-reverse;
+  }
+
+  .hero-left {
+    width: 100%;
+    padding-bottom: 0em;
+  }
+
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-right > img {
+    width: 80%;
+  }
+
+  .hero-h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-p1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .search-container > img {
+    width: 20px;
+    margin-right: 15px;
+  }
+
+  .search-container > input {
+    width: 60%;
+    padding: 1em 0em;
+  }
+
+  #search-button {
+    width: 150px;
+    padding: 1em 0em;
+    height: auto;
+  }
+
+  .section-1 {
+    padding: 4em 1em;
+  }
+
+  .section-1-h2 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  #section-1-p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .section-1-card-container {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .features-card {
+    padding: 2em 1em 1em 1em;
+    height: auto;
+  }
+
+  .features-card-h3 {
+    font-size: 1.25rem;
+  }
+
+  .section-2 {
+    padding: 4em 1em;
+  }
+
+  .section-2-h2 {
+    font-size: 1.7rem;
+  }
+
+  .section-2-p {
+    font-size: 1rem;
+  }
+
+  .course-tags {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .courses-container-sub {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .course {
+    width: 90%;
+  }
+
+  .tutor-left > p {
+    font-size: 0.875rem;
+  }
+
+  .explore-button {
+    padding: 1em 1em;
+  }
+
+  .section-3 {
+    padding: 4em 1em;
+    flex-direction: column-reverse;
+    gap: 2em;
+  }
+
+  .section-3-left {
+    width: 90%;
+  }
+
+  .section-3-right {
+    width: 90%;
+  }
+
+  .section-3-right > img{
+    width: 80%;
+  }
+
+  .section-3-p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .download-button {
+    margin: 0 auto;
+  }
+
+  .section-4 {
+    padding: 2em 1em;
+  }
+
+  .section-4-h2 {
+    font-size: 1.75rem;
+  }
+
+  .section-4-sub {
+    flex-direction: column-reverse;
+    width: 90%;
+    gap: 2em;
+  }
+
+  .section-4-sub-left {
+    width: 100%;
+  }
+
+  .section-4-sub-right {
+    width: 100%;
+  }
+
+  .section-4-sub-right > img {
+    width: 80%;
+  }
+
+  footer {
+    padding: 2em 1em 1em 1em;
+  }
+
+  .logo-container {
+    flex-direction: column;
+  }
+
+  .description {
+    padding: 0em;
+    border: none;
+  }
+
+  .email-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+  }
+
+  .email {
+    width: 70%;
+  }
+
+  .subscribe {
+    width: 70%;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .links a {
+    text-align: center;
+    border: none;
+  }
 }

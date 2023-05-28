@@ -39,7 +39,7 @@ export default function Home(){
                     <span style={{color:"#1154FDff"}}>Our </span> 
                     Features
                 </h2>
-                <p>
+                <p id="section-1-p">
                     You will take your career to the next level with 
                     KhadijatAcademy by getting world class resources.
                 </p>
