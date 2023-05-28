@@ -1121,12 +1121,13 @@ footer > h3 {
   }
 
   .hero {
-    padding: 4em 2em 0em 2em;
+    padding: 6em 2em 0em 2em;
   }
 
   .hero-left {
     width: 50%;
     padding-bottom: 4em;
+    padding-top: 2em;
   }
 
   .hero-right {
